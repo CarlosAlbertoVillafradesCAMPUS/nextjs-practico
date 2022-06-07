@@ -1,0 +1,64 @@
+@import 'vars';
+
+.ProductItem {
+	width: 230px;
+}
+.ProductItem .image-product {
+	width: 230px;
+	height: 230px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+.ProductItem .image-product:hover {
+	cursor: pointer;
+}
+.product-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+}
+.product-info .figure {
+	margin: 0;
+}
+.product-info div .add-cart {
+	width: 35px;
+	height: 35px;
+}
+.product-info div .add-cart:hover{
+	cursor: pointer;
+	width: 38px;
+	height: 38px;
+}
+.product-info div .added-cart {
+	width: 38px;
+	height: 38px;
+}
+.product-info div p:nth-child(1) {
+	font-weight: bold;
+	font-size: $--md;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+.product-info div p:nth-child(2) {
+	font-size: $--sm;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: $--very-light-pink;
+}
+@media (max-width: 640px) {
+
+	.ProductItem {
+		width: 100px;
+	}
+	.ProductItem .image-product {
+		width: 100px;
+		height: 100px;
+	}
+	.product-info div p:nth-child(2) {
+		font-size: 12px;
+	}
+	.product-info div p:nth-child(1) {
+		font-size: 14px;
+	}
+}

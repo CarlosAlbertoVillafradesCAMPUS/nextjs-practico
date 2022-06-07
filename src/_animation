@@ -1,0 +1,11 @@
+.MyOrder-cont {
+	position: fixed;
+	transition: 1s ease;
+	animation: swipeLeft 1.5s ease forwards;
+
+}
+@keyframes swipeLeft {
+	100% {transform: translateX(-460px);}
+}
+
+/* aqui tenemos el codigo para hacer la animacion que teniamos a la hora de desplegar la orden*/
