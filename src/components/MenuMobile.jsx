@@ -1,13 +1,12 @@
 import React from 'react';
 import close from '@icons/icon_close.png';
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@styles/MenuMobile.module.scss';
 
 const MenuMobile = ({toggleMenuM, setToggleMenuM}) => {
     return (
      <div className={styles['movil-menu']}>
-         <img className={styles.close} src={close.src} alt="close" onClick={() => setToggleMenuM(!toggleMenuM)} />
+         <img role="presentation" className={styles.close} src={close.src} alt="close" onClick={() => setToggleMenuM(!toggleMenuM)} onKeyDown={() => setToggleMenuM(!toggleMenuM)} />
         <ul className={styles.principal}>
             <li>
                 <Link href="/">CATEGORIES</Link>
