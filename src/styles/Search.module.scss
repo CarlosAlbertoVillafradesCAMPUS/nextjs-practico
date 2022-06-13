@@ -1,0 +1,76 @@
+@import 'vars';
+
+.container-search{
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 4vw;
+
+}
+.container-search .search{
+    width: 450px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: $--text-input-field;
+    color: $--very-light-pink;
+    font-size: $--md;
+    font-weight: 300;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+.container-search .search::placeholder{
+    background-image: url('../assets/icons/lupa.png');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: $--very-light-pink;
+    font-size: $--md;
+    font-weight:300;
+}
+.container-search .search:focus{
+    outline: none;
+}
+.cont-rigth{
+    display: flex;
+}
+.cont-rigth label{
+    font-size: $--sm;
+    color: $--black;
+    font-weight: bold;
+    margin-right: 5px;
+    place-self: center;
+}
+.cont-rigth select{
+    border: none;
+    font-size: $--sm;
+    color: $--very-light-pink;
+}
+.cont-rigth select:hover{
+    cursor: pointer;
+}
+.cont-rigth select:focus{
+    outline: none;  
+}
+.cont-rigth select option{
+    font-size: $--sm;
+}
+
+
+@media (max-width: 640px) {
+    .container-search{
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .container-search .search{
+        width: 90vw;
+        align-self: center;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .cont-rigth{
+        align-self: center;
+        margin-top: 15px;
+    }
+	
+}

@@ -23,37 +23,37 @@ const Header = () => {
 		<nav className={styles.nav}>
 			<img role="presentation" src={iconMenu.src} alt="menu" className={styles.menu} onClick={() => setToggleMenuM(!toggleMenuM)} onKeyDown={() => setToggleMenuM(!toggleMenuM)} />
 			<div className={styles['navbar-left']}>
-				<Link href="/">
+				<Link href="/" passHref>
 				<Image src= {logo} alt="logo" className={styles['nav-logo']} />
 				</Link>
 				<ul>
 					<li>
-						<Link href="/">
+						<Link href="/" passHref>
 						All
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
+						<Link href="/" passHref>
 						Clothes
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
+						<Link href="/" passHref>
 						Electronics
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
+						<Link href="/" passHref>
 						Fornitures
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
+						<Link href="/" passHref>
 						Toys
 						</Link>
 					</li>
 					<li>
-						<Link href="/">
+						<Link href="/" passHref>
 						Others
 						</Link>
 					</li>
@@ -74,7 +74,7 @@ const Header = () => {
 				</ul>
 			</div>
 			{toggleMenuM && <MenuMobile toggleMenuM={toggleMenuM} setToggleMenuM={setToggleMenuM} />}
-			{toggle && <Menu />}
+			{toggle && <Menu  toggle={toggle} setToggle={setToggle}/>}
 			{toggleOrder && <MyOrder toggleOrder={toggleOrder} setToggleOrder={setToggleOrder} />} {/*aqui le estamos pasando estos propos para poderlos utilizar en la carpeta de myOrder y hacer funcionar la flecha de close*/ } 
 		</nav>	
 	);

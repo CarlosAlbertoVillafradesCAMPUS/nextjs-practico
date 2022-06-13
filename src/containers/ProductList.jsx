@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductItem from '@components/ProductItem';
 import useGetProducts from '@hooks/useGetProducts';
+import Search from '@components/Search';
 import styles from '@styles/ProductList.module.scss';
 
 const API = 'https://api.escuelajs.co/api/v1/products';
@@ -10,6 +11,7 @@ const ProductList = () => {
 
 	return (
 		<section className={styles['main-container']}>
+			<Search />
 			<div className={styles.ProductList}>
 				{products.map(product =>
 				{

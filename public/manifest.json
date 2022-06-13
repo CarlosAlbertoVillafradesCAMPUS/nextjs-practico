@@ -1,11 +1,11 @@
 {
-    "theme_color": "#85f454",
-    "background_color": "#f6f3f0",
+    "theme_color": "#7ed321",
+    "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "shop-react",
-    "short_name": "shopReact",
+    "name": "ReactShop",
+    "short_name": "ReactShop",
     "description": "Ecomerce",
     "icons": [
         {

@@ -2,18 +2,18 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '@styles/Menu.module.scss';
 
-const Menu = () => {
+const Menu = ({toggle, setToggle}) => {
     return (
     <div className={styles['desktop-menu']}>
         <ul>
-            <li>
-                <Link href="/">My orders</Link>
+            <li role="menuitem" onClick={() => setToggle(!toggle)} onKeyDown={() => setToggle(!toggle)}>
+                <Link href="/orders" >My orders</Link>
             </li>
-            <li>
-                <Link href="/">My account</Link>
+            <li role="menuitem" onClick={() => setToggle(!toggle)} onKeyDown={() => setToggle(!toggle)}>
+                <Link href="/myAccount">My account </Link>
             </li>
-            <li>
-                <Link href="/">Sign out</Link>
+            <li role="menuitem" onClick={() => setToggle(!toggle)} onKeyDown={() => setToggle(!toggle)} >
+                <Link href="/Login">Sign out</Link>
             </li>
         </ul>
     </div>

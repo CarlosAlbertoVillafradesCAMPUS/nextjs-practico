@@ -27,3 +27,9 @@
 .order-item .close:hover {
 	cursor: pointer;
 }
+@media (max-width: 640px) {
+	.order-item p:nth-child(2) {
+		font-size: $--sm;
+	}
+
+}

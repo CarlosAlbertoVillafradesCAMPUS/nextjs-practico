@@ -18,7 +18,7 @@ const MyOrder = ({toggleOrder, setToggleOrder}) => { //le ponemos como parametro
 	return (
 		<aside className={styles['MyOrder-cont']}>
 			<div className={styles['title-container']}>
-				<Image src={flecha}  alt="arrow" onClick={() => setToggleOrder(!toggleOrder)} />
+				<Image src={flecha}  alt="arrow" className={styles.img} onClick={() => setToggleOrder(!toggleOrder)} />
 				<p className={styles['title-order']}>My order</p>
 			</div>
 			<div className={styles['my-order-content']}>

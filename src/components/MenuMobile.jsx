@@ -31,19 +31,19 @@ const MenuMobile = ({toggleMenuM, setToggleMenuM}) => {
             </li>
         </ul>
         <ul className={styles.setting}>
-            <li>
-                <Link href="/">My orders</Link>
+            <li role="menuitem" onClick={() => setToggleMenuM(!toggleMenuM)} onKeyDown={() => setToggleMenuM(!toggleMenuM)}>
+                <Link href="/orders">My orders</Link>
             </li>
-            <li>
-                <Link href="/">My account</Link>
+            <li role="menuitem" onClick={() => setToggleMenuM(!toggleMenuM)} onKeyDown={() => setToggleMenuM(!toggleMenuM)}>
+                <Link href="/myAccount">My account</Link>
             </li>
         </ul>
         <ul className={styles.footer}>
             <li className={styles.one}>
                 <Link href="/" >Cavillafrades@gmail.com</Link>
             </li>
-            <li className={styles.two}>
-                <Link href="/" >Sign out</Link>
+            <li className={styles.two} role="menuitem" onClick={() => setToggleMenuM(!toggleMenuM)} onKeyDown={() => setToggleMenuM(!toggleMenuM)}>
+                <Link href="/Login" >Sign out</Link>
             </li>
         </ul>
      </div>

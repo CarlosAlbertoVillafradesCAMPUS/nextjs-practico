@@ -22,8 +22,8 @@ const ProductItem = ({ product }) => {
 					<p>${product.price}</p>
 					<p>{product.title}</p>
 				</div>
-				<div className='figure' role="button" tabIndex={0} onClick={() => handleClick(product)} onKeyDown={() => handleClick(product)}>
-					{itsProductAdded() ? (<Image src={addedCart} alt='addedcart' className={styles['added-cart']} width={35} height={35}/>) : (<Image src={addToCart} alt='addcart' className={styles['add-cart']} />)}
+				<div role="button" className={styles.figure} tabIndex={0} onClick={() => handleClick(product)} onKeyDown={() => handleClick(product)}>
+					{itsProductAdded() ? (<img role="presentation" src={addedCart.src} alt='addedcart' className={styles['added-cart']} width={40} height={40} />) : (<img role="presentation" src={addToCart.src} alt='addcart' className={styles['add-cart']} width={38} height={38} />)}
 				</div>
 			</div>
 		</div>

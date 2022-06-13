@@ -18,12 +18,12 @@
 	justify-self: center;
 	display: none;
 }
-.title {
+.form-container .title {
 	font-size: $--lg;
 	margin-bottom: 12px;
 	text-align: center;
 }
-.subtitle {
+.form-container .subtitle {
 	color: $--very-light-pink;
 	font-size: $--md;
 	font-weight: 300;
@@ -54,7 +54,7 @@
 	color: $--hospital-green;
 	text-decoration: none;
 }
-.primary-button {
+.form-container .primary-button {
 	background-color: $--hospital-green;
 	border-radius: 8px;
 	border: none;
@@ -64,13 +64,12 @@
 	font-size: $--md;
 	font-weight: bold;
 	height: 50px;
-}
-.login-button {
 	margin-top: 14px;
 	margin-bottom: 30px;
 }
+
 @media (max-width: 640px) {
-	.logo {
+	.logo-sendEmail {
 		display: block;
 	}
 }
